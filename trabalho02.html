@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Add a black background color to the top navigation */
+        
+        .topnav {
+            position: relative;
+            overflow: hidden;
+            background-color: black;
+        }
+        /* Style the links inside the navigation bar */
+        
+        .topnav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        /* Change the color of links on hover */
+        
+        .topnav a:hover {
+            background-color: white;
+            color: black;
+        }
+        /* Add a color to the active/current link */
+        
+        .topnav a.active {
+            background-color: green;
+            color: white;
+        }
+        /* Centered section inside the top navigation */
+        
+        .topnav-centered a {
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* Right-aligned section inside the top navigation */
+        
+        .topnav-right {
+            float: right;
+        }
+        /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+        
+        @media screen and (max-width: 600px) {
+            .topnav a,
+            .topnav-right {
+                float: none;
+                display: block;
+            }
+            .topnav-centered a {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+            }
+        }
+        /* Style the content */
+        
+        .imagemfundo {
+            background-position: center;
+            background-size: cover;
+            background-image: url("https://i.pinimg.com/originals/99/9a/d1/999ad139158fafe7448a5f55180b931f.jpg");
+            min-height: 100%;
+            display: block;
+            box-sizing: inherit;
+        }
+        /* Style the footer */
+        
+        .footer {
+            color: white;
+            background-color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top navigation -->
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a href="#home" class="active">Home</a>
+        </div>
+
+        <!-- Left-aligned links (default) -->
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a href="#search">Search</a>
+            <a href="#about">About</a>
+        </div>
+
+    </div>
+
+    <div class="imagemfundo">
+        <h2>Kratos</h2>
+        <p>Ghost of Sparta</p>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>
