@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ddd;
+            margin: 0;
+            background-color: none;
+        }
+        /* Style the top navigation bar */
+        
+        .topnav {
+            position: relative;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 22px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: darkred;
+            color: white;
+        }
+        
+        .topnav-centered a {
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .topnav-right {
+            float: right;
+        }
+        /* Style the content */
+        
+        .imagemfundo {
+            margin-top: -32px;
+            font-size: xx-large;
+            background-position: center;
+            background-size: cover;
+            background-image: url("https://img.uhdpaper.com/wallpaper/aloy-horizon-forbidden-west-584@1@f-preview.jpg?dl");
+            min-height: 100%;
+        }
+        /* Style the footer */
+        
+        .footer {
+            background-color: #333;
+            padding: 10px;
+            float: bottom;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Top navigation -->
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a href="Home.html" class="active">Home</a>
+        </div>
+
+        <!-- Left-aligned links (default) -->
+        <a href="Kratos.html">Kratos</a>
+        <a href="Aloy.html">Aloy</a>
+
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a href="Lara.html">Lara</a>
+            <a href="Joel.html">Joel</a>
+        </div>
+
+    </div>
+    <div class="imagemfundo">
+        <p style="font-family: Arial">Aloy</p>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+
+</body>
+
+</html>
