@@ -6,6 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        
         body,
         html {
             height: 100%;
@@ -57,11 +61,28 @@
         
         .imagemfundo {
             margin-top: 0px;
-            font-size: xx-large;
+            font-size: 100px;
             background-position: center;
             background-size: cover;
             background-image: url("https://c.wallhere.com/photos/05/1b/Sony_PS_Vita_video_game_art_video_game_characters_video_games_Lara_Croft_Super_Mario_Crash_Bandicoot-1871809.jpg!d");
             min-height: 100%;
+        }
+        
+        .titulo {
+            padding-top: 45px;
+            font-size: 50px;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: uppercase;
+            color: #3d18e2;
+        }
+        
+        .texto {
+            padding: 20px;
+            font-size: 30px;
+            text-indent: 50px;
+            text-align: justify;
+            color: #333;
         }
         /* Style the footer */
         
@@ -69,6 +90,44 @@
             background-color: #333;
             padding: 10px;
             float: bottom;
+        }
+        /* Style the Form */
+        
+        .container {
+            margin-top: 50px;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-bottom: 50px;
+            border-radius: 100px;
+            background-color: red;
+            padding: 100px;
+            font-size: larger;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #2e8532;
         }
     </style>
 </head>
@@ -96,6 +155,36 @@
 
     </div>
     <div class="imagemfundo">
+    </div>
+
+    <div class="titulo">Personagens Que Merecem Homenagem
+    </div>
+    <div class="texto">This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from
+        this colored
+    </div>
+
+    <div class="container">
+        <h2>Comentários? Mande uma mensagem!</h2>
+        <form action="/action_page.php">
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+
+            <label for="lname">Sobrenome</label>
+            <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+
+            <label for="country">País</label>
+            <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="brasil">Brasil</option>
+            <option value="canada">Canada</option>
+            <option value="eua">Estados Unidos</option>
+          </select>
+
+            <label for="subject">Assunto</label>
+            <textarea id="subject" name="subject" placeholder="Escreva algo.." style="height:200px"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
     </div>
 
     <div class="footer">
